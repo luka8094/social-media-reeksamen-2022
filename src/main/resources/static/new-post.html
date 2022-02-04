@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ISoc</title>
+    <title>SuperSocial</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<h1>Create a new post</h1>
+<form>
+    <div><textarea id="text" placeholder="Hi there! what's on your mind...?"></textarea></div>
+    <div><input id="hashtags" placeholder="Add some hashtags to your post!"></div>
+    <div><input id="users" placeholder="Include your friends in your post!"></div>
+    <div><input id="date" placeholder="Choose when do you want this post to be shown?"></div>
+    <button id="submit-post">submit</button>
+</form>
 
 </body>
+<footer>
+    <script>
+
+        const URL = "localhost:8080"
+
+        document.getElementById("submit-post").onclick = (evt) => {
+
+
+        }
+
+    </script>
+</footer>
 </html>
