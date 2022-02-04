@@ -6,10 +6,38 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<h1>All the posts on SuperSocial as of right NOW</h1>
+<div id="posts-container"></div>
+
 
 </body>
 <footer>
     <script>
+
+        const URL = "localhost:8080"
+
+        const container = document.getElementsById("posts-container")
+
+        const options = {
+            method: "GET",
+            headers: {
+                'accept': 'application/json'
+            }
+        }
+
+       document.onload = (evt) => {
+
+            fetch(URL+"/posts",options)
+                .then( response => response.json())
+                .then( response => addPosts(response))
+
+        }
+
+        function addPosts(data){
+
+
+
+        }
 
     </script>
 </footer>
